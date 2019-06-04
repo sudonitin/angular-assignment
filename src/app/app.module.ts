@@ -13,6 +13,7 @@ import {DataService} from './data.service';
 import { from } from 'rxjs';
 import { AuthguardGuard } from './authguard.guard';
 import { SignupComponent } from './signup/signup.component';
+import { DetailsComponent } from './details/details.component';
 
 //starts
 const appRoutes:Routes = [
@@ -28,6 +29,10 @@ const appRoutes:Routes = [
   {
     path: 'signup',
     component: SignupComponent
+  },
+  {
+    path: 'details',
+    component: DetailsComponent
   }
 ]
 //ends
@@ -38,7 +43,8 @@ const appRoutes:Routes = [
     HeaderComponent,
     LoginComponent,
     DashboardComponent,
-    SignupComponent
+    SignupComponent,
+    DetailsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes), //

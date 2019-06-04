@@ -1,16 +1,26 @@
+<div class="container">
 <form (submit)='insert($event)'>
-  <div class="input">
-      <input placeholder="Enter ur email" type="text"/><br>
-      <input placeholder="Enter ur occupation" type="text"/><br>
-    <input placeholder="Enter ur username" type="text"/><br>
-    <input placeholder="Enter ur password" type="password"/><br>
-    <input type="submit" value="signup" />
+  <div class="input form-group">
+      <input placeholder="Enter ur email" class="form-control" type="text" required/><br>
+      <input placeholder="Enter ur occupation" class="form-control" type="text" required/><br>
+    <input placeholder="Enter ur username" class="form-control" type="text" required/><br>
+    <input placeholder="Enter ur password" class="form-control" type="password" required/><br>
+    <input type="submit" value="signup" class="submit btn btn-success btn-block"/>
   </div>
   <br>
 
   <form (submit)='login($event)'>
     already a user?<br>
-    <input type="submit" value="login" />
+    <input type="submit" value="login" class="submit btn btn-danger btn-block"/>
   </form>
   
 </form>
+</div>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Paytone+One');
+    body{
+        font-family: 'Roboto';
+        text-align: center;
+    }
+    </style>
+  

@@ -1,13 +1,23 @@
+
+<div class="container">
 <form (submit)='loginuser($event)'>
-  <div class="input">
-    <input placeholder="Enter ur email" type="text"/><br>
-    <input placeholder="Enter ur password" type="password"/><br>
-    <input type="submit" value="login" />
+  <div class="input form-group">
+    <input placeholder="Enter ur email" class="form-control" type="text" required/><br><br>
+    <input placeholder="Enter ur password" class="form-control" type="password" required/><br><br>
+    <input class="btn btn-danger btn-block submit" type="submit" value="login" />
   </div>
   <br>
 
   <form (submit)='signup($event)'>
-    <input type="submit" value="Signup" />
+    <input type="submit" value="Signup" class="btn btn-success btn-block submit"/>
   </form>
   
 </form>
+</div>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Paytone+One');
+    body{
+        font-family: 'Roboto';
+        text-align: center;
+    }
+    </style>
