@@ -9,7 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';//
 
 import {UserService} from './user.service';
-
+import {DataService} from './data.service';
 import { from } from 'rxjs';
 import { AuthguardGuard } from './authguard.guard';
 import { SignupComponent } from './signup/signup.component';
@@ -45,7 +45,7 @@ const appRoutes:Routes = [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [UserService],
+  providers: [UserService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
